@@ -9,13 +9,15 @@ body{
 main {
     width: 80%;
     margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
 }
 
 header {
     width: 80%;
+    margin: 0 auto;
     background-color: white;
     margin: 10px;
-    padding: 5px;
 }
 
 header ul {
@@ -24,10 +26,20 @@ header ul {
     align-items: center;
     width: fit-content;
     list-style: none;
+    padding: 0;
 }
 
 header ul li {
     margin-left: 10px;
+    padding: 5px 3px;
+}
+
+header ul li:hover {
+    background-color: black;
+}
+
+header ul li:hover a {
+    color: white;
 }
 
 header ul li a {
