@@ -3,7 +3,7 @@
 body{
     font-family: 'Indie Flower', cursive;
     background-image: url("images/email-pattern.png");
-    padding: 1.5em 10em;
+    padding: 1.5em 0;
 }
 .texto{
     background-color: white;
@@ -34,14 +34,20 @@ body{
 
 main {
     width: 100%;
+    max-width: 70em;
     margin: 0 auto;
     display: grid;
     grid-template-columns: 3fr 1fr;
-    margin: 0;
+    margin: 0 auto;
+}
+
+main section:nth-of-type(1){
+    margin-right: 2em;
 }
 
 header {
     width: 100%;
+    max-width: 70em;
     margin: 0 auto;
     background-color: white;
 }
@@ -53,6 +59,7 @@ header ul {
     width: fit-content;
     list-style: none;
     padding: 0;
+    margin: 0;
 }
 
 header ul li {
@@ -74,12 +81,8 @@ header ul li a {
 }
 
 table{
-    margin-right: 2em;
     background-color: white;
-}
-
-table, table tr, table td, table tr th{
-    border:1px solid gray;
+    border-collapse: collapse;
 }
 
 table tr th{
@@ -96,8 +99,6 @@ table tr{
 }
 
 table tr:nth-of-type(2) td:nth-of-type(1){
-    display: flex;
-    justify-content: center;
     height: 100%;
 }
 
@@ -136,18 +137,18 @@ table tr:nth-of-type(4) td:hover p{
 
 table tr:nth-of-type(5) td:nth-of-type(1){
     position: relative;
-    display: flex;
     height: 10em;
+    display: flex;
 }
 table tr:nth-of-type(5) td div{
     height: 5em;
 }
-table tr:nth-of-type(5) td div:nth-of-type(1){
+.box1{
     align-self: flex-start;
     width: 47%;
     border: 15px ridge rgb(52, 153, 52);
 }
-table tr:nth-of-type(5) td div:nth-of-type(2){
+.box2{
     align-self: flex-end;
     width: 47%;
     background-color: rgb(160, 241, 78);
