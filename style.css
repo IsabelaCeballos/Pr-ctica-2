@@ -5,7 +5,9 @@ body{
     background-image: url("images/email-pattern.png");
     padding: 1.5em 15em;
 }
-
+.texto{
+    background-color: white;
+}
 .aside article h2{
     color: rgb(156, 19, 247);
     margin: 0;
