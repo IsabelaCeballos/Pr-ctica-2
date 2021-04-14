@@ -2,4 +2,6 @@
 
 body{
     font-family: 'Indie Flower', cursive;
+    background-image: url("images/email-pattern.png");
+    padding: 1.5em 15em;
 }
