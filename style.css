@@ -46,7 +46,6 @@ header {
     width: 100%;
     margin: 0 auto;
     background-color: white;
-    margin: 10px;
 }
 
 header ul {
@@ -74,4 +73,21 @@ header ul li:hover a {
 header ul li a {
     text-decoration: none;
     color: black;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    width: 95%;
+    padding: 1px 0px;
+}
+
+footer ul li {
+    display: block;
+}
+
+footer ul {
+    list-style: none;
+    text-align: center;
+    padding: 0;
 }
