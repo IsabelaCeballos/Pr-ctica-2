@@ -6,16 +6,45 @@ body{
     padding: 1.5em 15em;
 }
 
+.aside article h2{
+    color: rgb(156, 19, 247);
+    margin: 0;
+}
+.aside article ul li,a{
+    list-style: none;
+    text-decoration-line: none;
+    color: black;
+}
+.aside ul {
+    padding-inline-start: 0;
+}
+.aside hr{
+    color: rgb(156, 19, 247);
+}
+.aside li a:hover{
+    color: red;
+}
+.aside hr{
+    height: 1px;
+    background-color: rgb(156, 19, 247);
+    border: none;
+    margin-block-start: 0;
+    margin-block-end: 0.5em;
+}
+
 main {
     width: 80%;
     margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0;
 }
 
 header {
     width: 80%;
+    margin: 0 auto;
     background-color: white;
     margin: 10px;
-    padding: 5px;
 }
 
 header ul {
@@ -24,10 +53,20 @@ header ul {
     align-items: center;
     width: fit-content;
     list-style: none;
+    padding: 0;
 }
 
 header ul li {
     margin-left: 10px;
+    padding: 5px 3px;
+}
+
+header ul li:hover {
+    background-color: black;
+}
+
+header ul li:hover a {
+    color: white;
 }
 
 header ul li a {
