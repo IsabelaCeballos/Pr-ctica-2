@@ -5,7 +5,10 @@ body{
     background-image: url("images/email-pattern.png");
     padding: 1.5em 10em;
 }
-
+.texto{
+    background-color: white;
+    padding: 10px;
+}
 .aside article h2{
     color: rgb(156, 19, 247);
     margin: 0;
@@ -17,9 +20,6 @@ body{
 }
 .aside ul {
     padding-inline-start: 0;
-}
-.aside hr{
-    color: rgb(156, 19, 247);
 }
 .aside li a:hover{
     color: red;
@@ -44,7 +44,6 @@ header {
     width: 100%;
     margin: 0 auto;
     background-color: white;
-    margin: 10px;
 }
 
 header ul {
@@ -149,4 +148,15 @@ table tr:nth-of-type(5) td div:nth-of-type(2){
     to{
         font-size: 10px;
     }
+}
+footer {
+    background-color: black;
+    color: white;
+    padding: 1px 0px;
+}
+
+footer ul {
+    list-style: none;
+    text-align: center;
+    padding: 0;
 }
