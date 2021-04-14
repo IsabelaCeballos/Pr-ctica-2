@@ -3,7 +3,7 @@
 body{
     font-family: 'Indie Flower', cursive;
     background-image: url("images/email-pattern.png");
-    padding: 1.5em 15em;
+    padding: 1.5em 10em;
 }
 
 .aside article h2{
@@ -36,7 +36,7 @@ main {
     width: 100%;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 3fr 1fr;
     margin: 0;
 }
 
@@ -72,4 +72,81 @@ header ul li:hover a {
 header ul li a {
     text-decoration: none;
     color: black;
+}
+
+table{
+    margin-right: 2em;
+    background-color: white;
+}
+
+table, table tr, table td, table tr th{
+    border:1px solid gray;
+}
+
+table tr th{
+    margin: 0;
+    height: fit-content;
+    background-color:dodgerblue;
+    color: white;
+    padding: 1em 0;
+}
+
+table tr{
+    margin: 0;
+}
+
+.image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    border: 10px double red;
+    border-radius: 150px;
+    width: 95%;
+    margin: 0 auto;
+}
+
+table tr div img{
+    width: 50%;  
+}
+
+table td{
+    width: 25em;
+    height: 8em;
+    padding: 1em;
+    box-sizing: border-box;
+}
+
+table tr:nth-of-type(4) td:hover p{
+    font-size: 16px;
+    animation: 1s fontSize ease-in-out;
+}
+
+table tr:nth-of-type(5) td:nth-of-type(1){
+    position: relative;
+    display: flex;
+    height: 10em;
+}
+table tr:nth-of-type(5) td div{
+    height: 5em;
+}
+table tr:nth-of-type(5) td div:nth-of-type(1){
+    align-self: flex-start;
+    width: 47%;
+    border: 15px ridge rgb(52, 153, 52);
+}
+table tr:nth-of-type(5) td div:nth-of-type(2){
+    align-self: flex-end;
+    width: 47%;
+    background-color: rgb(160, 241, 78);
+    border: 15px outset rgb(26, 26, 119);
+}
+
+@keyframes fontSize{
+    from{
+        font-size: 16px;
+    }
+    to{
+        font-size: 10px;
+    }
 }
