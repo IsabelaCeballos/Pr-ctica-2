@@ -21,9 +21,6 @@ body{
 .aside ul {
     padding-inline-start: 0;
 }
-.aside hr{
-    color: rgb(156, 19, 247);
-}
 .aside li a:hover{
     color: red;
 }
