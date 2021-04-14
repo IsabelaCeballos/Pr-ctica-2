@@ -2,6 +2,8 @@
 
 body{
     font-family: 'Indie Flower', cursive;
+    background-image: url("images/email-pattern.png");
+    padding: 1.5em 15em;
 }
 
 .aside article h2{
@@ -28,4 +30,46 @@ body{
     border: none;
     margin-block-start: 0;
     margin-block-end: 0.5em;
+}
+
+main {
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0;
+}
+
+header {
+    width: 80%;
+    margin: 0 auto;
+    background-color: white;
+    margin: 10px;
+}
+
+header ul {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: fit-content;
+    list-style: none;
+    padding: 0;
+}
+
+header ul li {
+    margin-left: 10px;
+    padding: 5px 3px;
+}
+
+header ul li:hover {
+    background-color: black;
+}
+
+header ul li:hover a {
+    color: white;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: black;
 }
